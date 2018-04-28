@@ -12,6 +12,7 @@ class SampleApp extends StatelessWidget {
       title: 'Sample App',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
+
       ),
       home: new SampleAppPage(),
     );
@@ -41,6 +42,8 @@ class _SampleAppPageState extends State<SampleAppPage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Sample App"),
+        backgroundColor: Colors.red,
+
       ),
       body: new Center(child: new Text(textToShow)),
       floatingActionButton: new FloatingActionButton(
