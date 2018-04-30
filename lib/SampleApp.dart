@@ -1,14 +1,17 @@
 import 'fragments/first_fragment.dart';
 import 'main.dart';
 
+
 import 'package:flutter/material.dart';
 
 class DrawerItem {
   String title;
   IconData icon;
-
   DrawerItem(this.title, this.icon);
+
+
 }
+
 
 class HomePage extends StatefulWidget {
   final drawerItems = [
@@ -59,9 +62,10 @@ class HomePageState extends State<HomePage> {
       appBar: new AppBar(
         // here we display the title corresponding to the fragment
         // you can instead choose to have a static title
-        title: new Text(widget.drawerItems[_selectedDrawerIndex].title),
+        title: new Text(widget.drawerItems[_selectedDrawerIndex].title,textAlign: TextAlign.end,),
         backgroundColor: Colors.red,
       ),
+
       drawer: new Drawer(
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -88,6 +92,8 @@ class HomePageState extends State<HomePage> {
         ),
       ),
       body: _getDrawerItemWidget(_selectedDrawerIndex),
+      backgroundColor:  const Color(0xF1F1F1F1) ,
     );
   }
+
 }

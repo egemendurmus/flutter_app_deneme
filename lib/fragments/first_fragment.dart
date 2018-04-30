@@ -9,10 +9,8 @@ class FirstFragment extends StatelessWidget {
         children: <Widget>[
           new Container(
             child: new Card(
-              margin: new EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 1.0),
-              color: new Color(0xbfbfbf),
-
-
+              margin: new EdgeInsets.fromLTRB(15.0, 22.0, 15.0, 1.0),
+             // color: new Color(0xf1f1f1),
               child: new Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[

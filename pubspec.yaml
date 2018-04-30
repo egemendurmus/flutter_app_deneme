@@ -10,7 +10,8 @@ dependencies:
   cupertino_icons: ^0.1.0
   english_words: ^3.1.0
   validate: ^1.6.0
-
+  color: any
+  complimentary_colors: any
 
 flutter_test:
     sdk: flutter
