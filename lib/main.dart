@@ -41,7 +41,7 @@ class FirstScreen extends StatelessWidget {
                   Navigator.push(
                       context,
                       new MaterialPageRoute(
-                          builder: (context) => new SampleApp()));
+                          builder: (context) => new HomePage()));
                 }),
             new Container(
               margin: const EdgeInsets.only(bottom: 5.0),
